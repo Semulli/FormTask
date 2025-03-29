@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    /*border: 1px solid black;*/
+    padding: 10px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: lightpink;
+    font-size: 30px;
+
+}
+
+p{
+    cursor:pointer ;
+}
+
+p:hover{
+    color: darkred;
+}
+
+.active{
+    color: darkred;
+}
