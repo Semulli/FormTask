@@ -19,6 +19,10 @@ const MuiTable = () => {
         dispatch(removeUser(id));
     };
 
+    if (!users || users.length === 0) {
+        return <p style={{ textAlign: "center", marginTop: "20px" }}>No users found.</p>;
+    }
+
     return (
         <TableContainer component={Paper} sx={{ width: "90%", margin: "auto", mt: 4, borderRadius: 2, boxShadow: 3 }}>
             <Table>
